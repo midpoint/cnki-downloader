@@ -1,20 +1,18 @@
 {
 	"major": 0,
 	"minor": 8,
-	"is_alpha": true,
+	"is_beta": true,
 	"is_required": true,
-	"time": "2017-3-11 18:24",
+	"time": "2017-11-25 11:00",
 	"reasons":[
-		"fix: cannot save paper when it's title contains illegal character",
-		" IF your browser couldn't be opened automatically",
-		" Please visit the project page to download",
+		"修改：增加多文档的下载功能。",
+		" 如果你的浏览器不能自动打开",
+		" 请访问项目主页下载",
 		" ",
-		" https://github.com/amyhaber/cnki-downloader",
+		" https://github.com/midpoint/cnki-downloader",
 		" "
 	],
 	"urls": {
-		"win": "https://github.com/amyhaber/cnki-downloader/releases/download/v0.8-alpha/cnki-downloader-windows.zip",
-		"mac": "https://github.com/amyhaber/cnki-downloader/releases/download/v0.8-alpha/cnki-downloader-darwin.zip",
-		"linux":"https://github.com/amyhaber/cnki-downloader/releases/download/v0.8-alpha/cnki-downloader-linux.zip"
+		"win": "https://github.com/midpoint/cnki-downloader/releases/download/v0.8-beta/cnki-downloader-windows.zip"		
 	}
 }
