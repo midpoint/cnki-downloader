@@ -7,10 +7,11 @@ BTW:
 - *star please* :)
 
 # Download
-The Latest Release (2017-3-11 **v0.8-alpha**):
-+ [Windows Portable](https://github.com/amyhaber/cnki-downloader/releases/download/v0.8-alpha/cnki-downloader-windows.zip)
-+ [Linux Portable](https://github.com/amyhaber/cnki-downloader/releases/download/v0.8-alpha/cnki-downloader-linux.zip)
-+ [Mac Portable](https://github.com/amyhaber/cnki-downloader/releases/download/v0.8-alpha/cnki-downloader-darwin.zip)
+The Latest Release (2017-11-25 **v0.8-beta**):
++ [Windows Portable](https://github.com/midpoint/cnki-downloader/releases/download/v0.8-beta/cnki-downloader-windows.zip)
+
+#Fix
+- 增加了多文件下载功能，格式：get 文件1序号 文件2序号 ……   ，例如：get 03 08
 
 # FAQ
 - Q：**为什么不开发/增加XXX功能？**
@@ -36,7 +37,7 @@ The Latest Release (2017-3-11 **v0.8-alpha**):
 # Usage
 Here is a gif picture, you can follow it, and it's really easy
 
-![image](https://github.com/amyhaber/cnki-downloader/blob/master/screenshots/showcase2.gif)
+![image](https://github.com/midpoint/cnki-downloader/blob/master/screenshots/showcase2.gif)
 
 # Future Work
 + Fix bugs
