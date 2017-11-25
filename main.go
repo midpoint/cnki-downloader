@@ -1295,24 +1295,25 @@ func main() {
 						color.Red("Invalid input")
 						break
 					}
+          				for ii:=1;ii<len(cmd_parts);ii++ { 
+						id, err := strconv.ParseInt(cmd_parts[ii], 10, 32)
+						if err != nil {
+							fmt.Fprintf(color.Output, "Invalid input %s\n", color.RedString(err.Error()))
+							break
+						}
+						id--
 
-					id, err := strconv.ParseInt(cmd_parts[1], 10, 32)
-					if err != nil {
-						fmt.Fprintf(color.Output, "Invalid input %s\n", color.RedString(err.Error()))
-						break
+						entries := ctx.GetPageData()
+
+						color.White("Downloading... %s\n", entries[id].Information.Title)
+						path, err := downloader.Download(&entries[id])
+						if err != nil {
+							fmt.Fprintf(color.Output, "Download failed %s\n", color.RedString(err.Error()))
+							break
+						}
+
+						fmt.Fprintf(color.Output, "Download success (%s) \n", color.GreenString(path))
 					}
-					id--
-
-					entries := ctx.GetPageData()
-
-					color.White("Downloading... %s\n", entries[id].Information.Title)
-					path, err := downloader.Download(&entries[id])
-					if err != nil {
-						fmt.Fprintf(color.Output, "Download failed %s\n", color.RedString(err.Error()))
-						break
-					}
-
-					fmt.Fprintf(color.Output, "Download success (%s) \n", color.GreenString(path))
 				}
 			case "break":
 				{
